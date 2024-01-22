@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    background-image: url(img/animationbackground.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    height: 400px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.ani1 img{
+    z-index: 1;
+    float: left;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.ani2 img{
+    z-index: 2;
+    float: left;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.ani3 img{
+    z-index: 3;
+    float: left;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.ani1 img{
+animation-name: ani1;
+animation-duration: 10s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+
+}
+.ani2 img{
+animation-name: ani2;
+animation-duration: 10s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+}
+.ani3 img{ 
+ animation-name: ani3;
+ animation-duration: 10s;
+ animation-direction: reverse;
+ animation-iteration-count: infinite;
+ animation-timing-function: linear;
+ animation-fill-mode: backwards;
+}
+@keyframes ani1{
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(100%);
+    }
+}
+@keyframes ani2{
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(100%);
+    }
+}
+@keyframes ani3{
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+.road{
+    background-color: black;
+    height: 120px;
+    width: 1520px;
+    position: absolute;
+    margin-top: -95px;
+    padding-top: 0;
+}
